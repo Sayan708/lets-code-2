@@ -1,0 +1,38 @@
+// In this block code we check if a person is eligible to vote or not 
+#include<iostream>
+using namespace std;
+int main()
+{
+    int yearnow,yearthen,monthnow,monththen,age1,age2;
+    cout<<" Enter the current year and month:"<<"\n";
+    cin>>yearnow>>monthnow;
+    cout<<"Enter your birthyear and month: "<<"\n";
+    cin>>yearthen>>monththen;
+    if(monththen >12 || monththen<1 && monthnow >12 || monthnow<1)
+	{
+	return 0;
+    }
+    if(monththen > monthnow)
+	{
+     age1=yearnow-yearthen-1;
+     age2=(12-monththen) + monthnow;
+	}
+	else
+	{
+      age1=yearnow-yearthen;
+      age2=12-monththen;
+    }
+    
+    cout<<"\n"<<"You are "<<age1<<" year and "<<age2<<" month old So,";
+    
+    if (age1 >= 18) 
+	{
+        cout << "You are eligible for voting"<<"\n";
+    } 
+	else 
+	{
+        cout << "You are not eligible for voting"<<"\n";
+    }
+    
+    return 0;
+}
