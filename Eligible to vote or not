@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
     int yearnow,yearthen,monthnow,monththen,age1,age2;
-    cout<<" Enter the current year and month (in numbers): "<<"\n";
+    cout<<" Enter the current year and month (eg. 2021, enter, 4, enter): "<<"\n";
     cin>>yearnow>>monthnow;
-    cout<<"Enter your birthyear and month (in numbers): "<<"\n";
+    cout<<"Enter your birthyear and month (eg. 1997, enter, 7, enter): "<<"\n";
     cin>>yearthen>>monththen;
     if(monththen >12 || monththen<1 && monthnow >12 || monthnow<1)
 	{
